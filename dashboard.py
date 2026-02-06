@@ -150,7 +150,7 @@ if bot_data:
     # Simple check: If dashboard refreshes and data exists
     status_html = '<span class="status-dot-green"></span> ONLINE & CONNECTED'
 
-st.markdown(f"### {status_html} <span style='color:gray; font-size:0.8em; margin-left:10px'>ITERATION-A-V1 DASHBOARD | a passion project by n1neoclocl</span>", unsafe_allow_html=True)
+st.markdown(f"### {status_html} <span style='color:gray; font-size:0.8em; margin-left:10px'>ITERATION-A-V1 DASHBOARD | a passion project by n1neoclock</span>", unsafe_allow_html=True)
 
 st.divider()
 
@@ -294,4 +294,5 @@ st.markdown("<br><br><center><small>System updates every 5 seconds</small></cent
 # Auto Refresh logic
 time.sleep(5)
 st.rerun()
+
 
