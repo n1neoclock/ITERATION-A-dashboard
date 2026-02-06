@@ -39,8 +39,9 @@ if not st.session_state.authenticated:
 # --- IF AUTHENTICATED, CODE CONTINUES BELOW ---
 
 # RE-ENTER YOUR KEYS HERE FOR THE DASHBOARD TO HAVE ACCESS
-API_KEY = "PKDRKIBGXRIWT7ON2H3N7ACMXN"
-SECRET_KEY = "GWccu2BaiQ8T9vUCfDBbpC4RNrvDKST7Y3ZHHK6syvCJ"
+# Access keys securely from Streamlit Cloud Secrets
+API_KEY = st.secrets["API_KEY"]
+SECRET_KEY = st.secrets["SECRET_KEY"]
 
 SYMBOLS = ['SPY', 'SLV', 'GLD']
 
@@ -293,3 +294,4 @@ st.markdown("<br><br><center><small>System updates every 5 seconds</small></cent
 # Auto Refresh logic
 time.sleep(5)
 st.rerun()
+
